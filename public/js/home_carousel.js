@@ -13,6 +13,7 @@ video.checkBrowser = function (src) {
     this.vid.load();
 };
 video.prev_btn = document.querySelector('#prev');
+video.next_btn = document.querySelector('#next');
 video.arrVideos = ['http://sobor/video/ar_1.mp4', 'http://sobor/video/ar_2.mp4', 'http://sobor/video/ar_3.mp4'];
 
 video.checkBrowser("http://sobor/video/ar_1.mp4");
@@ -36,6 +37,20 @@ video.prev_btn.onclick = function(){
     video.checkBrowser(video.arrVideos[idx]);
 };
 
+video.next_btn.onclick = function(){
+    console.dir(video);
+    console.dir(video.vid.src);
+    var idx = video.arrVideos.indexOf(video.vid.src);
+    console.log(idx);
+    
+    if (idx ===  0) {
+        idx = video.arrVideos.length - 1;
+    }else{
+        idx--;
+    }
+    
+    video.checkBrowser(video.arrVideos[idx]);
+};
 
 
 
