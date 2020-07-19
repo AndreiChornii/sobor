@@ -14,7 +14,12 @@ video.checkBrowser = function (src) {
 };
 video.prev_btn = document.querySelector('#prev');
 video.next_btn = document.querySelector('#next');
-video.arrVideos = ['http://sobor/video/ar_1.mp4', 'http://sobor/video/ar_2.mp4', 'http://sobor/video/ar_3.mp4'];
+
+let video_addr_name = [];
+let arrVideos = ['http://sobor/video/ar_1.mp4', 'http://sobor/video/ar_2.mp4', 'http://sobor/video/ar_3.mp4'];
+video_addr_name['movies'] = arrVideos;
+console.dir(video_addr_name);
+video.arrVideos = video_addr_name['movies'];
 
 video.checkBrowser("http://sobor/video/ar_1.mp4");
 
@@ -38,16 +43,19 @@ video.prev_btn.onclick = function(){
 };
 
 video.next_btn.onclick = function(){
-    console.dir(video);
-    console.dir(video.vid.src);
+//    console.dir(video);
+//    console.dir(video.vid.src);
     var idx = video.arrVideos.indexOf(video.vid.src);
-    console.log(idx);
+//    console.log(idx);
     
     if (idx ===  0) {
         idx = video.arrVideos.length - 1;
+        console.log(idx);
+        console.log(video.arrVideos[idx]);
     }else{
-        idx++;
+        idx--;
         console.log("ne_ravno");
+        console.log(idx);
         console.log(video.arrVideos[idx]);
     }
     
