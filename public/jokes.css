@@ -107,18 +107,27 @@ footer #main_footer #contr div{
 }
 #cont{
     display: flex;
-    flex-direction: column;
+    /*flex-direction: column;*/
     max-width: 100%;
-    height: 900px;
+    /*height: 900px;*/                      
     /* border: 1px solid green; */
     align-items: center;
+    justify-content: center;
 }
 #input_div{
     display: flex;
     flex-wrap: wrap;
 }
 #output_div{
-    border: 1px solid #000000;
-    width: 642px;
-    height: 362px;
+    /*border: 1px solid #000000;*/
+    width: 640px;
+    height: 360px;
+    box-shadow: 0 0 2px 3px #0000004f;
+}
+#prev:hover, #next:hover{
+    background-color: rgba(214, 212, 206, 0.8);
+    /*border-radius: 3px;*/
+}
+#video_name{
+    text-align: center;
 }

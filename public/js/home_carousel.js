@@ -46,7 +46,9 @@ video.next_btn.onclick = function(){
     if (idx ===  0) {
         idx = video.arrVideos.length - 1;
     }else{
-        idx--;
+        idx++;
+        console.log("ne_ravno");
+        console.log(video.arrVideos[idx]);
     }
     
     video.checkBrowser(video.arrVideos[idx]);
