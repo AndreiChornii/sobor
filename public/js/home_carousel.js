@@ -31,7 +31,7 @@ video.arrVideos = video_addr_name['movies'];
 video.arrNames = video_addr_name['names'];
 
 let ini = function(){
-    video.checkBrowser("http://sobor/video/ar_1.webm");
+    video.checkBrowser("http://sobor/video/ar_1.mp4");
     video.setName("video_1");
 };
 
