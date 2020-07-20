@@ -5,7 +5,7 @@ video.vid = document.getElementById("myVideo");
 video.names = document.getElementById("video_name");
 video.checkBrowser = function (src) {
     let isSupp = this.vid.canPlayType("video/mp4");
-    let src_for_video_obj = '../video/' + src.substring(src.length - 8, src.length);
+    let src_for_video_obj = '../video/' + src;
     if (isSupp === "") {
         this.vid.src = "../video/ar_1.webm";
     } else {
@@ -28,8 +28,9 @@ video.prev_btn = document.querySelector('#prev');
 video.next_btn = document.querySelector('#next');
 
 let video_addr_name = [];
-let arrVideos = ['http://sobor/video/ar_1.mp4', 'http://sobor/video/ar_2.mp4', 'http://sobor/video/ar_3.mp4'];
+//let arrVideos = ['http://sobor/video/ar_1.mp4', 'http://sobor/video/ar_2.mp4', 'http://sobor/video/ar_3.mp4'];
 //let arrVideos = ['../video/ar_1.mp4', '../video/ar_2.mp4', '../video/ar_3.mp4'];
+let arrVideos = ['ar_1.mp4', 'ar_2.mp4', 'ar_3.mp4'];
 let arrNames = ['video_1', 'video_2', 'video_3'];
 video_addr_name['movies'] = arrVideos;
 video_addr_name['names'] = arrNames;
@@ -39,14 +40,16 @@ video.arrNames = video_addr_name['names'];
 
 let init = function(){
 //    video.checkBrowser("http://sobor/video/rabbit320.mp4");
-    video.checkBrowser("../video/ar_1.mp4");
+    video.checkBrowser("ar_1.mp4");
     video.setName("video_1");
 };
 
 video.prev_btn.onclick = function(){
     console.dir(video);
     console.dir(video.vid.src);
-    var idx = video.arrVideos.indexOf(video.vid.src);
+    let what_to_look = video.vid.src.substring(video.vid.src.length - 8, video.vid.src.length);
+    console.log(what_to_look);
+    var idx = video.arrVideos.indexOf(what_to_look);
     console.log(idx);
     
     if (idx ===  video.arrVideos.length - 1 ) {
@@ -64,10 +67,12 @@ video.prev_btn.onclick = function(){
 };
 
 video.next_btn.onclick = function(){
-//    console.dir(video);
-//    console.dir(video.vid.src);
-    var idx = video.arrVideos.indexOf(video.vid.src);
-//    console.log(idx);
+    console.dir(video);
+    console.dir(video.vid.src);
+    let what_to_look = video.vid.src.substring(video.vid.src.length - 8, video.vid.src.length);
+    console.log(what_to_look);
+    var idx = video.arrVideos.indexOf(what_to_look);
+    console.log(idx);
     
     if (idx ===  0) {
         idx = video.arrVideos.length - 1;
