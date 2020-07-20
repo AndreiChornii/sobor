@@ -82,4 +82,4 @@ video.next_btn.onclick = function(){
     video.setName(video.arrNames[idx]);
 };
 
-//init();
+init();

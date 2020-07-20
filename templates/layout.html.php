@@ -17,11 +17,12 @@
             </header>
             <ul>
                 <li><a href="/">Головна</a></li>
-                <li><a href="/joke/list">Jokes List</a></li>
-                <li><a href="/joke/edit">Add a new Joke</a></li>
-                <li><a href="/author/register">Register new author</a></li>
-                <li><a href="/category/list">Categories list</a></li>
-                <li><a href="/author/list">Users list</a></li>
+                <li><a href="/joke/list">Служба за контрактом</a></li>
+                <li><a href="/joke/edit">Строкова служба</a></li>
+                <li><a href="/author/register">Територіальна оборона</a></li>
+                <li><a href="/category/list">Соціальний захист</a></li>
+                <li><a href="/category/list">Контакти</a></li>
+<!--                <li><a href="/author/list">Users list</a></li>-->
                 <?php if ($loggedIn): ?>
                     <li><a href="/logout">Log out</a>
                     </li>
@@ -50,6 +51,8 @@
                     <a class='title'href="#">СЛУЖБА ЗА КОНТРАКТОМ</a>
                     <a href="#">Переваги служби за контрактом</a>
                     <a href="#">Як підписати контракт</a>
+                    
+                    <a class='title'href="#">СТРОКОВА СЛУЖБА</a>
                 </div>
                 <div id = 'to'>
                     <a class='title' href="#">Територіальна оборона</a>
