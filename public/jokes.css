@@ -124,6 +124,12 @@ footer #main_footer #contr div{
     height: 360px;
     box-shadow: 0 0 2px 3px #0000004f;
 }
+
+#prev, #next{
+    width: 30px;
+    height: 90px;
+}
+    
 #prev:hover, #next:hover{
     /*background-color: rgba(214, 212, 206, 0.8);*/
     /*border-radius: 3px;*/
