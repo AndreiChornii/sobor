@@ -11,7 +11,7 @@ video.checkBrowser = function (src) {
         this.vid.src = src;
 //          let source = document.createElement('source');
 //          console.log(source);
-        this.vid.type = 'video/mp4';
+//        this.vid.;
     }
     console.dir(this.vid);
     console.log(isSupp);

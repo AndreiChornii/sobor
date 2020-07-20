@@ -2,7 +2,7 @@
     <button id="prev" type="button">&#10094;</button>
     <div id="output_div">
 
-        <video id="myVideo" width="640" height="360" controls="controls" >
+        <video id="myVideo" width="640" height="360" controls="controls" autoplay loop muted playsinline type = 'video/mp4'>
             Your browser does not support HTML5 video.
         </video>
 
