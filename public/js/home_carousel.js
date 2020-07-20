@@ -16,6 +16,7 @@ video.checkBrowser = function (src) {
     console.dir(this.vid);
     console.log(isSupp);
     this.vid.load();
+    this.vid.play();
 };
 video.setName = function(name) {
     console.log(this.names); 
