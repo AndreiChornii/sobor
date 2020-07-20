@@ -2,15 +2,15 @@
     <button id="prev" type="button">&#10094;</button>
     <div id="output_div">
 
-        <video id="myVideo" width="640" height="360" controls="controls" autoplay loop muted playsinline type = 'video/mp4'>
+<!--        <video id="myVideo" width="640" height="360" controls="controls" autoplay loop muted playsinline type = 'video/mp4'>
             Your browser does not support HTML5 video.
-        </video>
+        </video>-->
 
-<!--        <video id="myVideo" width="640" height="360" controls>
+        <video id="myVideo" width="640" height="360" controls>
             <source src="http://sobor/video/rabbit.mp4" type="video/mp4">
             <source src="http://sobor/video/rabbit.webm" type="video/webm">
             <p>Your browser doesn't support HTML5 video. Here is a <a href="rabbit320.mp4">link to the video</a> instead.</p>
-        </video>-->
+        </video>
 
     </div>
     <button id="next" type="button">&#10095;</button>
