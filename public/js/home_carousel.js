@@ -37,7 +37,7 @@ video.arrNames = video_addr_name['names'];
 
 let init = function(){
 //    video.checkBrowser("http://sobor/video/rabbit320.mp4");
-    video.checkBrowser("http://sobor/video/ar_1.webm");
+    video.checkBrowser("http://sobor/video/rabbit.mp4");
     video.setName("video_1");
 };
 
