@@ -56,7 +56,7 @@ class Joke {
     }
 
     public function home() {
-        $title = 'Internet Joke Database';
+        $title = 'Соборний РТЦК та СП';
 
         return ['template' => 'home.html.php', 'title' => $title];
     }
